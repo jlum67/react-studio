@@ -26,11 +26,19 @@ function App() {
         <BakeryItem name={item.name} description={item.description} price={item.price} image={item.image} total={total} cart={cart} setTotal={setTotal} setCart={setCart} />
       ))}
 
-      
 
       <div>
         <h2>Cart</h2>
-        <h3>{cart}</h3>
+        <h3>
+
+          {cart.map((item, index) => ( // TODO: map bakeryData to BakeryItem components
+          // <p>Bakery Item {index}</p> // replace with BakeryItem component
+          <div>
+            {item}
+          </div>
+          ))}
+        
+        </h3>
         <h3>Total: {total}</h3>
   
         {/* TODO: render a list of items in the cart */}

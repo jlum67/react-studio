@@ -15,7 +15,7 @@ export default function BakeryItem({name, price, description, image, total, cart
 
         <div class="border">
             <h4>
-                <img src={image} width="500rem"/>
+                <img src={image} width="450rem"/>
             </h4>
             <h4>
                 {name}
